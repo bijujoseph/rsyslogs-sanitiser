@@ -8,7 +8,7 @@ Install instructions
 
 ```
  sudo cp sanitiser.conf  /etc/rsyslog.d/
- sudo service rsyslog status
+ sudo service rsyslog restart
 ```
 
 Testing
