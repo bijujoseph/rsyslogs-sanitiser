@@ -7,6 +7,9 @@ Install instructions
 3. Restart rsyslog demon.
 
 ```
+ sudo chmod 777 /opt/rsyslogs-sanitiser/sanitiser.py
+
+
  sudo cp sanitiser.conf  /etc/rsyslog.d/
  sudo service rsyslog restart
 ```
