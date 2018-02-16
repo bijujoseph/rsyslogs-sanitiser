@@ -12,7 +12,8 @@ def onInit():
 	global rc
 	global patterns
 	patterns = {
-	            '(^|[^A-Za-z0-9.])(\d+-\d+-\d+)([^A-Za-z0-9]|$)': 'XXX-XXX-XXXX'
+	            '(^|[^A-Za-z0-9.])(\d+-\d+-\d+)([^A-Za-z0-9]|$)': 'XXX-XXX-XXXX',
+		        '(.*\?)(apikey=.*)(&.*)': 'apikey=XXXXXX'
 	}
 	rc = re.compile("("+")|(".join(patterns.keys())+")")
 
